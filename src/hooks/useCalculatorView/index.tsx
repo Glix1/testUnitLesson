@@ -30,8 +30,7 @@ const useCalculatorView = () => {
     } else if (result.includes("√x")) {
       const values = result.split("√x");
       const value1 = values[0];
-      const value2 = values[1];
-      setResult(square(value1, value2));
+      setResult(square(value1));
     }
   };
 

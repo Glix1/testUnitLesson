@@ -1,3 +1,5 @@
+![example workflow](https://github.com/Glix1/testUnitLesson/actions/workflows/nodeci.yml/badge.svg)
+![example workflow](https://github.com/Glix1/testUnitLesson/actions/workflows/cypress.yml/badge.svg)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).\

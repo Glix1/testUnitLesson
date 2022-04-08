@@ -7,4 +7,5 @@ test("show result", () => {
   act(() => addResult("new result"));
   const { result: resultText } = result.current;
   expect(resultText).toEqual("new result");
+  
 });
