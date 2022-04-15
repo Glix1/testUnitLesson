@@ -1,7 +1,7 @@
 name: BackCI
 on:
   push:
-    branches: [ FinalProject ]
+    branches: [ FinalProjectCorrection ]
     
 jobs:
   build:

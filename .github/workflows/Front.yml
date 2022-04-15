@@ -1,13 +1,8 @@
 name: FrontCI
 on:
   push:
-    branches: [ FinalProject ]
+    branches: [ FinalProjectCorrection ]
     
-defaults:
-    run:
-        working-directory: ./Front
-
-
 jobs:
   build:
 
