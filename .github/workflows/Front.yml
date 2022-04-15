@@ -1,0 +1,31 @@
+name: Blog tests
+on:
+  push:
+    branches: [ FinalProject ]
+    
+defaults:
+    run:
+        working-directory: ./Front
+
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16.x]
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache-dependency-path: ./Front/package-lock.json
+          # working-directory: ./Front
+      - run: npm ci
+        working-directory: ./Front
+      - run: npm run build --if-present
+        working-directory: ./Front
+      - run: npm test
+        working-directory: ./Front
