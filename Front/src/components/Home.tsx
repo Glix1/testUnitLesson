@@ -8,7 +8,7 @@ const Home = ({ setRoute }: { setRoute: (data: any) => void }) => {
       {loading && <div>Loading....</div>}
       <div onClick={() => setRoute({ route: "cart" })}>Aller sur panier</div>
       <div>
-        {products.map((product) => {
+        {Array(products).map((product) => {
           return (
             <React.Fragment>
               <div
