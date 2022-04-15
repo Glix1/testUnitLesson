@@ -1,4 +1,4 @@
-name: Blog tests
+name: FrontCI
 on:
   push:
     branches: [ FinalProject ]
